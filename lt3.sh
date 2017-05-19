@@ -47,6 +47,9 @@ awk '$9 < 400' "$dirOfLoadTest/$nameOfAccessLogFile" | grep GET > "$dirOfLoadTes
 
 # mixing queries
 shuf "$dirOfLoadTest/$nameOfAccessLogFile2" --output="$dirOfLoadTest/access.log"
+
+rm -rf /home/qateam/workspace/TestLoadLan/general-master/$nameOfAccessLogFile
+rm -rf /home/qateam/workspace/TestLoadLan/general-master/$nameOfAccessLogFile2
 # start load test
 ##yandex-tank -c "conf.ini"
 #copy results from test dir to publoc results dir
