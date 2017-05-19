@@ -1,6 +1,6 @@
 #!/bin/bash
-#incrementDay=$DAYS #Р»РёР±Рѕ С‚Р°Рє
-incrementDay=-2 
+incrementDay=$DAYS
+#incrementDay=-2 
 
 #date of acces log file and name of test folder 
 accessLogDate="$(date -d "$incrementDay day" +"%Y%m%d")" 
