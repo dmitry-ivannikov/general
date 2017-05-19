@@ -50,7 +50,9 @@ shuf "$dirOfLoadTest/$nameOfAccessLogFile2" --output="$dirOfLoadTest/access.log"
 
 rm -rf /home/qateam/workspace/TestLoadLan/general-master/$nameOfAccessLogFile
 rm -rf /home/qateam/workspace/TestLoadLan/general-master/$nameOfAccessLogFile2
+
 # start load test
-##yandex-tank -c "conf.ini"
+yandex-tank -c "conf.ini"
+
 #copy results from test dir to publoc results dir
-##copyresults
+copyresults
