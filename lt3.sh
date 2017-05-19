@@ -52,6 +52,7 @@ rm -rf /home/qateam/workspace/TestLoadLan/general-master/$nameOfAccessLogFile
 rm -rf /home/qateam/workspace/TestLoadLan/general-master/$nameOfAccessLogFile2
 
 # start load test
+cd $dirOfLoadTest
 yandex-tank -c "conf.ini"
 
 #copy results from test dir to publoc results dir
